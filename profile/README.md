@@ -17,6 +17,7 @@ Apps are distributed through a private Homebrew tap — quarantine is removed au
 
 ```bash
 brew tap patchark/casks https://github.com/patchark/homebrew-casks
+brew trust patchark/casks
 brew install --cask <app>
 ```
 

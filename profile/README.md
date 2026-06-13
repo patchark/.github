@@ -11,7 +11,18 @@ The app is usually **not** damaged — it's quarantined. Removing the attribute 
 
 ---
 
-## Quick fix
+## Install via Homebrew
+
+Apps are distributed through a private Homebrew tap — quarantine is removed automatically on install.
+
+```bash
+brew tap patchark/casks https://github.com/patchark/homebrew-casks
+brew install --cask <app>
+```
+
+See [homebrew-casks](https://github.com/patchark/homebrew-casks) for setup and available casks.
+
+## Manual fix
 
 ```bash
 xattr -dr com.apple.quarantine "/Applications/Example.app"
